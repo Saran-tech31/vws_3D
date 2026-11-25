@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Virtual Welding Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+}
+</script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>VWS <span>3D Simulator</span></h2>
+        <p>Interactive Virtual Welding Training</p>
+    </nav>
+
+    <section class="hero">
+        <h1>3D Virtual Welding Simulator</h1>
+        <p>Experience interactive welding practice in a virtual environment.</p>
+    </section>
+
+    <section class="simulator">
+
+        <h2>3D Welding Workshop</h2>
+
+        <div id="scene-container"></div>
+
+<div class="practice-controls">
+
+    <button id="startPractice">Start Practice</button>
+
+    <button id="resetPractice">Reset</button>
+
+</div>
+
+<div class="results-panel">
+
+    <h3>Practice Results</h3>
+
+    <p>Score: <span id="score">0%</span></p>
+
+    <p>Accuracy: <span id="accuracy">0%</span></p>
+
+    <p id="practiceStatus">Ready to begin!</p>
+
+</div>
+
+
+        <p id="status">3D Workshop Loading...</p>
+
+    </section>
+
+    <footer>
+        <p>Virtual Welding Simulator | Educational Project</p>
+    </footer>
+    <footer>
+    <p>Virtual Welding Simulator</p>
+    <p>Created by Saran</p>
+    <p>Workshop Project</p>
+    <p>Section AH2</p>
+</footer>
+
+    <script type="module" src="threeD.js"></script>
+
+</body>
+</html>
